@@ -1,0 +1,527 @@
+/* Import Icons from font-awesome and Fonts from googleaplis */
+@import url(../font-awesome/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Roboto');
+
+/* 
+ * Design for Mobile, Tablet, Desktop 
+ *
+ * Colors:
+ *     Light Green:  #00ff00
+ *     Light Blue:   #0092B3
+ *     Dark Green:   #0E2600
+ *     Pale Blue:    #19D5FF
+ *     White:        #ffffff
+ */
+
+
+/*=========================================================================*/
+/* 
+ * RESET
+ * http://meyerweb.com/eric/tools/css/reset/ 
+ * v2.0 | 20110126
+ * License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*=========================================================================*/
+/* 
+ * CLEARFIX
+ */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/*=========================================================================*/
+/*
+ * General
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {	
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: .618rem;
+    line-height: 1.4;
+	background-color: #fff;
+    color: #0E2600;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bree Serif", "Times New Roman", serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.6rem;
+    display: inline;
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-shadow: 0 1px 1px #00ff00;
+    display: inline;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.title img {
+    height: 30px;
+    width: auto;
+}
+
+
+/*=========================================================================*/
+/* 
+ * Company Information
+ */
+
+.company-info img {
+    width: 50px;
+    height: 48px;
+}
+
+#company-pt1 {
+    color: #00ff00; 
+}
+
+#company-pt2 {
+    color: #0092B3;
+}
+
+/*=========================================================================*/
+/* 
+ * Header
+ */
+
+.hd-top {
+    background-color: #0E2600;
+    padding-top: .2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.hd-company-info {
+    padding: 20px;
+}
+
+/* 
+ * Header - Navigation Bar
+ */
+
+.hd-navbar ul {
+    margin: 0;
+	padding: 0;
+}
+
+.hd-navbar ul li a {
+	display: block;
+	padding: 1rem;
+	background-color: #0092B3;
+    color: #000;
+    font-weight: bold;
+    font-size: .8rem;
+    text-decoration: none;
+    border-bottom: 1px solid #0E2600;
+}
+
+.hd-navbar ul li a:hover,
+.hd-navbar ul li a:active {
+	color: #00ff00;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+/*=========================================================================*/
+/* 
+ * Masthead
+ */
+
+.masthead-bg {
+    min-height: 300px;
+    padding-bottom: 20px;
+}
+
+.mh-image {
+    transition: opacity 1s ease-out;
+    background-color: #19D5FF;
+}
+
+.mh-image figcaption {
+    font-weight: bold;
+}
+
+
+/*=========================================================================*/
+/* 
+ * Main
+ */
+
+/* wrapper applies to entire page*/
+.wrapper {
+    margin: 0;
+	padding: 0;
+}
+
+/* content-box applies to all content */
+.content-box {
+    max-width: 100rem;
+    text-align: center;
+}
+
+/* 
+ * Buttons
+ */
+
+.mn-buttons {
+    padding-bottom: 20px;
+}
+
+button {
+    border-radius: 50%;
+    border: 6px solid #fff;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+button:hover {
+    border: 6px solid #73AD21;
+}
+
+#active {
+    border: 6px solid #73AD21;
+}
+
+.btn1 {
+    background-image: url(../img/icon-you.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn2 {
+    background-image: url(../img/icon-transport.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn3 {
+    background-image: url(../img/icon-energy.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mn-container {
+    padding: 0 5%;
+}
+
+.mn-container figcaption {
+    text-align: left;
+}
+
+
+/*=========================================================================*/
+/* 
+ * Footer
+ */
+
+footer {
+    background-color: #0E2600;
+    color: #FFF;
+    padding: 20px 0;
+    margin-top: 20px;
+    border: none;
+}
+
+/*
+ * Social Media
+ */
+
+.social-media {
+    padding-bottom: 20px;
+}
+
+footer li {
+    display: inline;
+    padding: 1rem;
+}
+
+footer li a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: #0092B3;
+}
+
+/*
+ * Company Logo & Name
+ */
+
+.ft-company-info {
+    padding-bottom: 10px;
+}
+
+.ft-company-info img {
+    width: 30px;
+    height: auto;
+}
+
+footer h1 {
+    font-size: .8rem;
+}
+
+/*
+ * Company Address & Copyright
+ */
+
+.ft-adrs {
+    padding-bottom: 10px;
+}
+
+
+/*=========================================================================*/
+/* 
+ * Media Query - TABLET ============================================---
+ */
+
+@media screen and (min-width: 35rem) and (max-width: 60rem) {
+    
+    /* font-size has to be 1rem for this viewport */
+    body {	
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+ 
+    /* Primary Navigation - full width, 1 row */
+    
+    .hd-navbar {
+        padding: 0 5%;
+    }
+    .hd-navbar li {
+        width: 33.33%;
+        float: left;
+    }
+    
+    .hd-navbar li a {
+        font-size: 1.1rem;
+        border-bottom: none;
+        border-right: 1px solid #0E2600;
+    }
+    
+    .hd-navbar li:last-child a {
+        border: none;
+    }
+    
+    .masthead-bg {
+        min-height: 400px;
+    }
+    
+    .mn-container img {
+        width: 49%;
+        float: left;
+    }
+    
+    .mn-container figcaption {
+        width: 49%;
+        float: right;
+    }
+    
+    .ft-company-info img {
+    width: 40px;
+    height: auto;
+    }
+
+    footer h1 {
+        font-size: 1rem;
+    }
+}
+
+
+/* 
+ * Media Query - DESKTOP ------------------------------------------------
+ */
+
+@media screen and (min-width: 60rem) {
+    
+    /* font-size has to be 1.618rem for this viewport */
+    body {	
+        font-size: 1.618rem;
+        line-height: 1.6;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Entire content is aligned left (.content-box) */
+    .content-box {
+        text-align: left;
+        padding: 0 10%;
+    }
+    
+     /* Primary Navigation - full width, 1 row */
+    
+    .hd-navbar li {
+        width: 30%;
+        float: left;
+        text-align: center;
+    }
+    
+    .hd-navbar li a {
+        font-size: 1.8rem;
+        border-bottom: none;
+        border-right: 1px solid #0E2600;
+    }
+    
+    .hd-navbar li:last-child a {
+        border: none;
+    }
+    
+    .mh-image {
+        background-color: #0092B3;
+        padding-top: 20px;
+    }
+        
+    .mh-image-box {
+        height: 500px;
+        width: 750px;
+        margin: 0 auto;
+    }
+    
+    .mh-image figcaption {
+        background-color: #19D5FF;
+        font-size: 1.2rem;
+    }
+    
+    .mn-buttons {
+        width: 8%;
+        float: left;
+    }
+    
+    button {
+        display: block;
+        margin: 0 0 8px 0;
+    }
+    
+    .mn-container {
+        padding: 0;
+        width: 92%;
+        float: left;
+    }
+    
+    .mn-container img {
+        width: 30%;
+        float: left;
+        padding-right: 2%;
+    }
+    
+    .mn-container figcaption {
+        width: 70%;
+        float: right;
+    }
+    
+    .social-media {
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 50px;
+    }
+    
+    .social-media .fa {
+        font-size: 30px;
+    }
+    
+    .ft-company {
+        display: inline-block;
+    }
+    
+    .ft-company-info img {
+        width: 50px;
+        height: auto;
+    }
+
+    footer h1 {
+        font-size: 1.618rem;
+    }
+    
+}

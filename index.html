@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Masthead Slideshow and Content Manipulation</title>
+    
+    <!-- This Website's Style Sheet -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Media Scaling for responsive layout -->
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0"> 
+     
+</head>
+
+<body>
+<div class="wrapper">
+   <!--========================================================================-->
+    <header>
+    <div class="header-bg">
+        
+        <div class="hd-top">
+           
+            <div class="content-box"> 
+                <!-- Company Logo and Name -->
+                <div class="hd-company-info company-info">  
+                    <img src="img/globe-logo.png" alt="Green Globe">
+
+                    <h1 id="company-pt1">GREEN</h1>
+                    <h1 id="company-pt2">PLANET</h1>
+                </div> 
+
+                <!-- Primary Navigation -->
+                <div class="hd-navbar clearfix">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+                        <li><a href="#"><i class="fa fa-rss-square"></i> Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Masthead Slide Show -->       
+        <div class="masthead-bg">
+                <div class="content-box">
+
+                    <div class="mh-title title">  
+                        <img src="img/sun.png" alt="Sun">
+                        <h2>Use the Sun's Energy</h2>
+                    </div>
+
+                    <div class="mh-image">
+                        <!-- Image slider loaded in main.js -->
+                    </div>
+                </div>
+        </div>
+ 
+    </div>
+    </header>
+        
+
+   <!--========================================================================-->
+    <main>
+    <div class="main-bg">
+            
+        <div class="content-box clearfix">
+           
+           <!-- Section Title -->
+           <div class="mn-title title">  
+                <img src="img/footprints.png" alt="Sun">
+                <h2>Reduce Your Carbon Footprint</h2>
+            </div>
+            
+            <!-- Buttons -->
+            <div class="mn-buttons">
+                <button class="btn btn1" id="active" value="button1"></button>
+                <button class="btn btn2" value="button2"></button>
+                <button class="btn btn3" value="button3"></button>
+            </div>
+           
+           <!-- Buttons Associated Image and Text -->
+           <div class="mn-container clearfix">
+               <!-- Button related images & text loaded in main.js -->
+           </div>
+           
+        </div>
+    </div>
+    </main>
+
+   <!--========================================================================-->
+    <footer>
+    <div class="footer-bg">
+       
+        <div class="content-box">
+           
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                </ul> 
+            </div>
+            
+            <div class="ft-company">
+                <div class="ft-company-info company-info">  
+                    <img src="img/globe-logo.png" alt="Green Globe">
+
+                    <h1 id="company-pt1">GREEN</h1>
+                    <h1 id="company-pt2">PLANET</h1>
+                </div>
+
+                <div class="ft-adrs"> 
+                    <p>
+                        1234 Main Street <br>
+                        Ottawa, Ontario <br>
+                        K2G 1V8
+                    </p>
+                </div>
+
+                <div class="ft-cpr">
+                    <p>&copy; greenplanet.com</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </footer>
+    
+</div>
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>
